@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.hezecom.baptistseekdaily2019" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" versionCode="1">
+<widget id="com.hezecom.baptistdis2019" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" versionCode="1">
     <name>Seek Daily 2019</name>
     <description>
         Seek Daily 2019 for Baptist Convention.
     </description>
-    <author email="hezecom2@gmail.com" href="http://phonegap.com">
+    <author email="hezecom2@gmail.com" href="http://hezecom.com">
         Hezecom
     </author>
     <content src="index.html" />
@@ -13,11 +13,10 @@
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="SplashScreenDelay" value="2000" />
-    <preference name="FadeSplashScreenDuration" value="2000" />
     <preference name="android-minSdkVersion" value="16" />
-    <preference name="BackupWebStorage" value="none" />
     <preference name="SplashScreen" value="screen" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="SplashScreenDelay" value="5000" />
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
@@ -36,6 +35,8 @@
     <plugin name="cordova-plugin-vibration" spec="~3.1.0" />
     <plugin name="cordova-plugin-statusbar" spec="~2.4.2" />
     <plugin name="cordova-plugin-whitelist" spec="~1.3.3" />
+    <icon src="icon.png" />
+    <splash src="splash.png" />
     <platform name="android">
         <icon qualifier="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
         <icon qualifier="mdpi" src="res/icons/android/drawable-mdpi-icon.png" />
@@ -83,28 +84,6 @@
         <splash height="1024" platform="ios" src="res/screens/ios/Default-Portrait~ipad.png" width="768" />
         <splash height="960" platform="ios" src="res/screens/ios/Default@2x~iphone.png" width="640" />
         <splash height="480" platform="ios" src="res/screens/ios/Default~iphone.png" width="320" />
-    </platform>
-    <platform name="wp8">
-        <icon height="99" platform="wp8" src="res/icon/wp8/ApplicationIcon.png" width="99" />
-        <icon height="159" platform="wp8" src="res/icon/wp8/Background.png" width="159" />
-        <splash height="1280" platform="wp8" src="res/screen/wp8/screen-portrait.jpg" width="768" />
-    </platform>
-    <platform name="windows">
-        <icon height="150" platform="windows" src="res/icon/windows/Square150x150Logo.scale-100.png" width="150" />
-        <icon height="30" platform="windows" src="res/icon/windows/Square30x30Logo.scale-100.png" width="30" />
-        <icon height="50" platform="windows" src="res/icon/windows/StoreLogo.scale-100.png" width="50" />
-        <splash height="300" platform="windows" src="res/screen/windows/SplashScreen.scale-100.png" width="620" />
-        <icon height="120" platform="windows" src="res/icon/windows/StoreLogo.scale-240.png" width="120" />
-        <icon height="44" platform="windows" src="res/icon/windows/Square44x44Logo.scale-100.png" width="44" />
-        <icon height="106" platform="windows" src="res/icon/windows/Square44x44Logo.scale-240.png" width="106" />
-        <icon height="70" platform="windows" src="res/icon/windows/Square70x70Logo.scale-100.png" width="70" />
-        <icon height="71" platform="windows" src="res/icon/windows/Square71x71Logo.scale-100.png" width="71" />
-        <icon height="170" platform="windows" src="res/icon/windows/Square71x71Logo.scale-240.png" width="170" />
-        <icon height="360" platform="windows" src="res/icon/windows/Square150x150Logo.scale-240.png" width="360" />
-        <icon height="310" platform="windows" src="res/icon/windows/Square310x310Logo.scale-100.png" width="310" />
-        <icon height="150" platform="windows" src="res/icon/windows/Wide310x150Logo.scale-100.png" width="310" />
-        <icon height="360" platform="windows" src="res/icon/windows/Wide310x150Logo.scale-240.png" width="744" />
-        <splash height="1920" platform="windows" src="res/screen/windows/SplashScreenPhone.scale-240.png" width="1152" />
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
